@@ -5,11 +5,10 @@
   "checkpoint_policy": {
     "included": [
       "checkpoints/linear_attention_h256_l512.pt",
-      "checkpoints/simple_attention_h256_l256.pt"
-    ],
-    "missing": [
+      "checkpoints/simple_attention_h256_l256.pt",
       "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt"
-    ]
+    ],
+    "missing": []
   },
   "models": [
     {
@@ -47,7 +46,7 @@
       "num_slots": 8,
       "encoder_layers": 3,
       "decoder_layers": 2,
-      "status": "weights_missing"
+      "status": "available"
     }
   ],
   "main_notebooks": [

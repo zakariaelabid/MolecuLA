@@ -299,6 +299,8 @@ def main() -> None:
     token_accuracy = parse_percent_metric(train_metric_text, "token_acc")
     sequence_accuracy = parse_percent_metric(train_metric_text, "seq_acc")
     family_macro = parse_family_macro(family_macro_text)
+    checkpoint_path = EXPORT_ROOT / "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt"
+    checkpoint_available = checkpoint_path.exists() and checkpoint_path.stat().st_size > 1024
 
     write_csv(
         RESULT_ROOT / "model_validation/metrics.csv",
@@ -323,7 +325,7 @@ def main() -> None:
             },
             {
                 "metric": "checkpoint_available",
-                "value": "0",
+                "value": "1" if checkpoint_available else "0",
                 "unit": "boolean",
                 "source": "export checkpoint inventory",
             },
@@ -336,8 +338,8 @@ def main() -> None:
             "token_accuracy": token_accuracy,
             "sequence_accuracy": sequence_accuracy,
             "family_retention_macro": family_macro,
-            "checkpoint_available": False,
-            "checkpoint_expected_path": "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
+            "checkpoint_available": checkpoint_available,
+            "checkpoint_path": "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
             "source": {
                 "token_and_sequence_accuracy": "ProbeVAE/train-AR.ipynb cell 7",
                 "family_retention_macro": "artifacts/model_compare/ar_model_h256_l256/patched_notebooks/ar_step1_latent_quality.ipynb cell 14",
@@ -409,10 +411,10 @@ def main() -> None:
         {
             "model": "autoregressive",
             "status": "recovered_compact_results",
-            "checkpoint_status": "weights_missing_from_export",
+            "checkpoint_status": "included" if checkpoint_available else "missing",
             "notes": [
                 "Results were recovered from executed notebook outputs and legacy traversal image folders.",
-                "The AR checkpoint was not available as a real local weight file during export.",
+                "The AR checkpoint is included in the export." if checkpoint_available else "The AR checkpoint is not present in the export.",
                 "Large panels, latent arrays, generated probe weights, and full notebook outputs are intentionally excluded.",
             ],
             "source_artifacts": {

@@ -2,8 +2,8 @@
     "model_name":  "ar_model_h256_l256",
     "architecture":  "autoregressive Transformer-VAE with slot encoder and causal Transformer decoder",
     "source_notebook":  "transformer_vae/train-AR.ipynb",
-    "checkpoint_path":  "artifacts/model_compare/ar_model_h256_l256/checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
-    "checkpoint_status":  "dummy_placeholder_waiting_for_recovered_weights",
+    "checkpoint_path":  "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
+    "checkpoint_status":  "included",
     "latent_dim":  256,
     "hidden_dim":  256,
     "attention_heads":  8,
@@ -75,14 +75,13 @@
                                          ],
     "timestamp":  "2026-04-26T00:00:00+02:00",
     "run_status":  {
-                       "latent_quality":  "not_run_dummy_checkpoint",
-                       "confounds":  "not_run_dummy_checkpoint",
-                       "traversal":  "not_run_dummy_checkpoint",
-                       "MLP_probes":  "not_run_dummy_checkpoint",
+                       "latent_quality":  "recovered_compact_results",
+                       "confounds":  "recovered_compact_results",
+                       "traversal":  "recovered_compact_results",
+                       "MLP_probes":  "recovered_compact_results",
                        "training":  "not_run_training_notebook_created"
                    },
     "warnings":  [
-                     "Checkpoint file is a dummy placeholder and must be replaced before execution.",
                      "SA-score rows require sascorer availability in the runtime environment.",
                      "Training notebook includes a one-time CSV rewrite switch for SELFIES-decoded SMILES; keep it False unless intentionally updating the root CSV."
                  ]

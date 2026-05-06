@@ -76,7 +76,7 @@ _SPECS = [
         "layers": None,
         "encoder_layers": 3,
         "decoder_layers": 2,
-        "status": "weights_missing"
+        "status": "available"
     }
 ]
 
