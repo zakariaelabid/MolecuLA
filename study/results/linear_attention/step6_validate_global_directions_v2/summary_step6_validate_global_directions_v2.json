@@ -1,0 +1,32 @@
+{
+  "smoke_mode": true,
+  "active_properties": [
+    "TPSA",
+    "HeavyAtomCount"
+  ],
+  "decode_modes": [
+    "free_length",
+    "fixed_length_seed_pred"
+  ],
+  "seed_count": 4,
+  "pack_size": 4,
+  "step_grid": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "candidate_rows": 1280,
+  "path_rows": 320,
+  "seed_runs": 64,
+  "family_rows": 16,
+  "plots_generated": 2,
+  "strips_generated": 6,
+  "benchmark_total_span_std_ref": 29.492504119873047,
+  "target_total_span_std": 29.492504119873047,
+  "active_reference_step_span": 4.0,
+  "raw_span_effective_median": 29.492504119873047,
+  "delta_step_std_effective": 7.373126029968262,
+  "geometry_audit_csv": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\step6_validate_global_directions_v2\\tables\\step6_traversal_geometry_audit.csv"
+}

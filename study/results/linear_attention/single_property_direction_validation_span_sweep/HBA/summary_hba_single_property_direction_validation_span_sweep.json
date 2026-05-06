@@ -1,0 +1,59 @@
+{
+  "property": "HBA",
+  "property_residual_name": "resid_HBA",
+  "linked_confound": "selfies_len_tokens",
+  "smoke_mode": false,
+  "seed_count": 12,
+  "pack_size": 16,
+  "decode_modes": [
+    "free_length",
+    "fixed_length_seed_pred"
+  ],
+  "step_grid": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "benchmark_total_span_std_ref": 30.20323944091797,
+  "default_total_span_std": 15.101619720458984,
+  "max_total_span_std": 22.652429580688477,
+  "span_sweep_multipliers": [
+    1.0,
+    4.0,
+    16.0,
+    64.0
+  ],
+  "span_sweep_labels": [
+    "x1",
+    "x4",
+    "x16",
+    "x64"
+  ],
+  "strip_span_label": "x64",
+  "sweep_max_total_span_std": 60.40647888183594,
+  "step4_available": true,
+  "model_py": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\transformer_vae\\models\\final_nat_linearpool.py",
+  "ckpt_path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\transformer_vae\\trained_models\\final(H256-L512-linpool).pt",
+  "probe_summary_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_probe_summary.csv",
+  "alignment_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_direction_alignment.csv",
+  "residual_alignment_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_residual_alignment.csv",
+  "direction_specs_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_direction_specs.csv",
+  "seed_registry_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_seed_registry.csv",
+  "candidate_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_candidate_level.csv",
+  "medoid_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_medoid_level.csv",
+  "path_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_representative_paths.csv",
+  "seed_summary_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_seed_summary.csv",
+  "step_summary_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_step_summary.csv",
+  "run_summary_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_run_summary.csv",
+  "validation_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_validation_checks.csv",
+  "curve_plot_path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\plots\\hba_curves.png",
+  "quality_plot_path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\plots\\hba_quality.png",
+  "strip_index_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\single_property_direction_validation_span_sweep\\HBA\\tables\\hba_strip_index.csv",
+  "validation_issues": []
+}

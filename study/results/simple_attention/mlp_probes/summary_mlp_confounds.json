@@ -1,0 +1,76 @@
+{
+  "model_dir": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256",
+  "step3_dir": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3",
+  "step4_dir": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\directions_step4",
+  "output_dir": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_mlp_step3",
+  "device": "cuda",
+  "n_properties": 15,
+  "avg_raw_r2_test_mlp": 0.8575937628746033,
+  "avg_resid_r2_test_mlp": 0.7860042969385783,
+  "avg_raw_delta_test_mlp_minus_ridge": 0.21867791323962765,
+  "avg_resid_delta_test_mlp_minus_ridge": 0.3928271626931975,
+  "top_raw_test_gains": [
+    {
+      "target": "NumBridgeheadAtoms",
+      "delta_test_mlp_minus_ridge": 0.6255996619899458,
+      "r2_test": 0.7072254419326782,
+      "ridge_r2_test": 0.0816257799427324
+    },
+    {
+      "target": "NumSpiroAtoms",
+      "delta_test_mlp_minus_ridge": 0.4126757682933567,
+      "r2_test": 0.463955819606781,
+      "ridge_r2_test": 0.0512800513134243
+    },
+    {
+      "target": "HBD",
+      "delta_test_mlp_minus_ridge": 0.39232775159909794,
+      "r2_test": 0.6550747156143188,
+      "ridge_r2_test": 0.2627469640152209
+    },
+    {
+      "target": "QED",
+      "delta_test_mlp_minus_ridge": 0.34838073177362316,
+      "r2_test": 0.693892240524292,
+      "ridge_r2_test": 0.3455115087506688
+    },
+    {
+      "target": "NumRotatableBonds",
+      "delta_test_mlp_minus_ridge": 0.34741775561830956,
+      "r2_test": 0.8295073509216309,
+      "ridge_r2_test": 0.4820895953033213
+    }
+  ],
+  "top_resid_test_gains": [
+    {
+      "target": "resid_NumBridgeheadAtoms",
+      "delta_test_mlp_minus_ridge": 0.6547095073937634,
+      "r2_test": 0.7037010788917542,
+      "ridge_r2_test": 0.0489915714979907
+    },
+    {
+      "target": "resid_ExactMolWt",
+      "delta_test_mlp_minus_ridge": 0.5426686596475734,
+      "r2_test": 0.8567487597465515,
+      "ridge_r2_test": 0.3140801000989782
+    },
+    {
+      "target": "resid_MolWt",
+      "delta_test_mlp_minus_ridge": 0.5385344488133454,
+      "r2_test": 0.8555634021759033,
+      "ridge_r2_test": 0.3170289533625579
+    },
+    {
+      "target": "resid_NumRotatableBonds",
+      "delta_test_mlp_minus_ridge": 0.5155424537533103,
+      "r2_test": 0.7162594199180603,
+      "ridge_r2_test": 0.20071696616475
+    },
+    {
+      "target": "resid_HeavyAtomCount",
+      "delta_test_mlp_minus_ridge": 0.4761046056754023,
+      "r2_test": 0.8548513650894165,
+      "ridge_r2_test": 0.3787467594140142
+    }
+  ]
+}

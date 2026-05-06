@@ -1,0 +1,5 @@
+quantity,value
+avg_raw_delta_r2_mlp_minus_ridge,0.2794213230797459
+avg_resid_delta_r2_mlp_minus_ridge,0.3373767409025571
+median_raw_delta_r2_mlp_minus_ridge,0.2072667127614929
+median_resid_delta_r2_mlp_minus_ridge,0.3168077921162309

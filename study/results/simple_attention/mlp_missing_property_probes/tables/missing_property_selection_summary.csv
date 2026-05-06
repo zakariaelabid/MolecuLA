@@ -1,0 +1,17 @@
+property,default_priority_target,selected_for_this_notebook,excluded_as_confounded_in_source,dropped_as_redundant,additional_property_added_here,already_in_existing_raw_mlp_csv,already_in_existing_resid_mlp_csv
+MolWt,False,True,True,False,False,True,True
+ExactMolWt,False,False,True,True,False,True,True
+HeavyAtomCount,False,True,True,False,False,True,True
+cLogP,True,False,False,False,False,True,True
+TPSA,True,False,False,False,False,True,True
+HBD,True,False,False,False,False,True,True
+HBA,True,False,False,False,False,True,True
+NumRotatableBonds,False,True,False,False,False,True,True
+RingCount,False,True,True,False,False,True,True
+AromaticRingCount,True,False,False,False,False,True,True
+FractionCSP3,True,False,False,False,False,True,True
+NumSpiroAtoms,True,False,False,False,False,True,True
+NumBridgeheadAtoms,True,False,False,False,False,True,True
+BertzCT,False,True,True,False,False,True,True
+QED,True,False,False,False,False,True,True
+SA-score,False,True,False,False,True,False,False

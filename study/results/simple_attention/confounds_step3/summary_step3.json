@@ -1,0 +1,178 @@
+{
+  "artifact_root": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3",
+  "panel_path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\panels_step3_with_residuals.csv",
+  "rows": 794403,
+  "split_sizes": {
+    "train": 635522,
+    "test": 79441,
+    "val": 79440
+  },
+  "avg_r2_val_z_to_y": 0.6381594514479946,
+  "avg_r2_test_z_to_y": 0.6389158949134836,
+  "avg_r2_val_z_to_c": 0.9246631248507209,
+  "avg_r2_test_z_to_c": 0.9250086373634681,
+  "avg_delta_r2_val_after_residualization": -0.24647909365311224,
+  "avg_delta_r2_test_after_residualization": -0.24573967408259895,
+  "top_predictable_properties_val": [
+    {
+      "property": "HeavyAtomCount",
+      "r2_val": 0.9624234085076716,
+      "r2_test": 0.9622093320530076,
+      "alpha": 1.0
+    },
+    {
+      "property": "BertzCT",
+      "r2_val": 0.9307783249144548,
+      "r2_test": 0.9302699658744238,
+      "alpha": 3.1622776601683795
+    },
+    {
+      "property": "ExactMolWt",
+      "r2_val": 0.9190205949486866,
+      "r2_test": 0.9196501516141578,
+      "alpha": 0.3162277660168379
+    },
+    {
+      "property": "MolWt",
+      "r2_val": 0.9184367082851828,
+      "r2_test": 0.9190326762937124,
+      "alpha": 0.3162277660168379
+    },
+    {
+      "property": "RingCount",
+      "r2_val": 0.8504635991039834,
+      "r2_test": 0.8494791791440223,
+      "alpha": 0.3162277660168379
+    }
+  ],
+  "top_predictable_confounds_val": [
+    {
+      "confound": "selfies_len_tokens",
+      "r2_val": 0.9905542862994022,
+      "r2_test": 0.9905972455647404,
+      "alpha": 1.0
+    },
+    {
+      "confound": "ring_token_count",
+      "r2_val": 0.9473818499242052,
+      "r2_test": 0.9474282234493584,
+      "alpha": 1.0
+    },
+    {
+      "confound": "branch_token_count",
+      "r2_val": 0.9303085876045876,
+      "r2_test": 0.9300928570645584,
+      "alpha": 3.1622776601683795
+    },
+    {
+      "confound": "token_entropy",
+      "r2_val": 0.8304077755746886,
+      "r2_test": 0.8319162233752146,
+      "alpha": 1.0
+    }
+  ],
+  "top_confounded_pairs": [
+    {
+      "property": "HeavyAtomCount",
+      "confound": "selfies_len_tokens",
+      "abs_corr": 0.9758552870156556,
+      "pearson_corr": 0.9733298161957404,
+      "spearman_corr": 0.9758552870156556
+    },
+    {
+      "property": "ExactMolWt",
+      "confound": "selfies_len_tokens",
+      "abs_corr": 0.9463780754041984,
+      "pearson_corr": 0.939774002093704,
+      "spearman_corr": 0.9463780754041984
+    },
+    {
+      "property": "MolWt",
+      "confound": "selfies_len_tokens",
+      "abs_corr": 0.9454495248258004,
+      "pearson_corr": 0.9390260974450968,
+      "spearman_corr": 0.9454495248258004
+    },
+    {
+      "property": "BertzCT",
+      "confound": "selfies_len_tokens",
+      "abs_corr": 0.9041699836974086,
+      "pearson_corr": 0.8957150480044495,
+      "spearman_corr": 0.9041699836974086
+    },
+    {
+      "property": "RingCount",
+      "confound": "ring_token_count",
+      "abs_corr": 0.8814211363495316,
+      "pearson_corr": 0.8511349318126664,
+      "spearman_corr": 0.8814211363495316
+    },
+    {
+      "property": "BertzCT",
+      "confound": "ring_token_count",
+      "abs_corr": 0.8318975902817646,
+      "pearson_corr": 0.8012764501145168,
+      "spearman_corr": 0.8318975902817646
+    },
+    {
+      "property": "HeavyAtomCount",
+      "confound": "branch_token_count",
+      "abs_corr": 0.8217966844768736,
+      "pearson_corr": 0.8078282566954976,
+      "spearman_corr": 0.8217966844768736
+    },
+    {
+      "property": "ExactMolWt",
+      "confound": "branch_token_count",
+      "abs_corr": 0.8167409619326381,
+      "pearson_corr": 0.8028451113546605,
+      "spearman_corr": 0.8167409619326381
+    },
+    {
+      "property": "MolWt",
+      "confound": "branch_token_count",
+      "abs_corr": 0.8160568030716782,
+      "pearson_corr": 0.8022795189052588,
+      "spearman_corr": 0.8160568030716782
+    },
+    {
+      "property": "HeavyAtomCount",
+      "confound": "ring_token_count",
+      "abs_corr": 0.7868524914212198,
+      "pearson_corr": 0.7613088998530574,
+      "spearman_corr": 0.7868524914212198
+    }
+  ],
+  "confound_direction_files": [
+    {
+      "confound": "selfies_len_tokens",
+      "path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\confound_directions\\w_length.npy",
+      "dim": 256
+    },
+    {
+      "confound": "token_entropy",
+      "path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\confound_directions\\w_entropy.npy",
+      "dim": 256
+    },
+    {
+      "confound": "branch_token_count",
+      "path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\confound_directions\\w_branch.npy",
+      "dim": 256
+    },
+    {
+      "confound": "ring_token_count",
+      "path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\confound_directions\\w_ring.npy",
+      "dim": 256
+    }
+  ],
+  "artifact_exists": {
+    "panels_step3.csv": true,
+    "panels_step3_with_residuals.csv": true,
+    "confound_directions_index.csv": true,
+    "top20_confounded_pairs_YC.csv": true,
+    "r2_Z_to_Y.csv": true,
+    "r2_Z_to_C.csv": true,
+    "r2_Z_to_Y_vs_Yresid.csv": true,
+    "delta_r2_Y_vs_Yresid.png": true
+  }
+}

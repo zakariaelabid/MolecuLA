@@ -1,0 +1,84 @@
+{
+  "source_policy": "Fresh anonymized export without copying source .git history.",
+  "originals_untouched": true,
+  "data_policy": "Dataset and tokenizer copied; large regenerated panels, latent arrays, NPZ direction caches, per-sample benchmark tables, candidate-level traversal tables, and generated MLP weights excluded.",
+  "checkpoint_policy": {
+    "included": [
+      "checkpoints/linear_attention_h256_l512.pt",
+      "checkpoints/simple_attention_h256_l256.pt"
+    ],
+    "missing": [
+      "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt"
+    ]
+  },
+  "models": [
+    {
+      "name": "linear_attention",
+      "model_file": "models/linear_attention_vae.py",
+      "checkpoint": "checkpoints/linear_attention_h256_l512.pt",
+      "hidden_size": 256,
+      "latent_size": 512,
+      "max_len": 77,
+      "attention_heads": 8,
+      "num_slots": 8,
+      "layers": 1,
+      "status": "available"
+    },
+    {
+      "name": "simple_attention",
+      "model_file": "models/simple_attention_vae.py",
+      "checkpoint": "checkpoints/simple_attention_h256_l256.pt",
+      "hidden_size": 256,
+      "latent_size": 256,
+      "max_len": 77,
+      "attention_heads": 8,
+      "num_slots": 8,
+      "layers": 1,
+      "status": "available"
+    },
+    {
+      "name": "autoregressive",
+      "model_file": "models/autoregressive_vae.py",
+      "checkpoint": "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
+      "hidden_size": 256,
+      "latent_size": 256,
+      "max_len": 77,
+      "attention_heads": 8,
+      "num_slots": 8,
+      "encoder_layers": 3,
+      "decoder_layers": 2,
+      "status": "weights_missing"
+    }
+  ],
+  "main_notebooks": [
+    "study/notebooks/00_data_tokenization_and_training.ipynb",
+    "study/notebooks/01_latent_quality_benchmarks_and_family_tests.ipynb",
+    "study/notebooks/02_linear_probes_panels_and_residuals.ipynb",
+    "study/notebooks/03_latent_traversals.ipynb",
+    "study/notebooks/04_mlp_probes_all_properties.ipynb"
+  ],
+  "scripts": [
+    "scripts/enrich_autoregressive_results.py",
+    "scripts/verify_export.py"
+  ],
+  "autoregressive_recovered_results": {
+    "status": "included_as_compact_recovered_outputs",
+    "manifest": "study/results/autoregressive/extraction_manifest.json",
+    "image_counts": {
+      "root_traversals": 7,
+      "latent_traversal_plots": 20
+    },
+    "included_tables": [
+      "model_validation/tables/reconstruction_by_split.csv",
+      "model_validation/tables/phase5_family_retention_summary.csv",
+      "linear_probes/tables/ridge_raw_confound_residual_r2.csv",
+      "linear_probes/tables/linear_regression_raw_confound_residual_r2.csv",
+      "mlp_probes/tables/mlp_raw_r2.csv",
+      "mlp_probes/tables/mlp_residual_r2.csv",
+      "mlp_probes/tables/mlp_vs_ridge_overview.csv",
+      "mlp_probes/tables/mlp_missing_raw_r2.csv",
+      "mlp_probes/tables/mlp_missing_residual_r2.csv",
+      "mlp_probes/tables/mlp_missing_vs_ridge_overview.csv"
+    ]
+  }
+}

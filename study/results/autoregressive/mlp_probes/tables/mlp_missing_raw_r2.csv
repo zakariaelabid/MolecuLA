@@ -1,0 +1,3 @@
+property,r2_train,r2_val,r2_test,epochs
+BertzCT,0.988335,0.986350,0.986100,15
+QED,0.843687,0.804871,0.803316,15

@@ -1,0 +1,35 @@
+{
+  "tag": "nat_model_h256_l256",
+  "model_py": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\transformer_vae\\models\\NAT_model.py",
+  "checkpoint": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\transformer_vae\\trained_models\\final(H256-L256).pt",
+  "constructor": {
+    "vocab_size": 110,
+    "hidden_size": 256,
+    "latent_size": 256,
+    "max_len": 77,
+    "attn_heads": 8,
+    "num_slots": 8,
+    "layers": 1
+  },
+  "state_dict_key_count_model": 47,
+  "state_dict_key_count_checkpoint": 47,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "shape_mismatches": [],
+  "matches_strictly": true,
+  "sample_keys": [
+    "embedding.weight",
+    "pos_encoder.pe",
+    "encoder_blocks.0.W_q.weight",
+    "encoder_blocks.0.W_k.weight",
+    "encoder_blocks.0.W_v.weight",
+    "encoder_blocks.0.W_o.weight",
+    "encoder_blocks.0.norm1.weight",
+    "encoder_blocks.0.norm1.bias",
+    "encoder_blocks.0.ff.0.weight",
+    "encoder_blocks.0.ff.0.bias",
+    "encoder_blocks.0.ff.3.weight",
+    "encoder_blocks.0.ff.3.bias"
+  ],
+  "module_name": "verify_nat_model_h256_l256"
+}

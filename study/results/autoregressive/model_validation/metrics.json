@@ -1,0 +1,11 @@
+{
+  "token_accuracy": 0.9951000000000001,
+  "sequence_accuracy": 0.978,
+  "family_retention_macro": 0.8512396694214875,
+  "checkpoint_available": false,
+  "checkpoint_expected_path": "checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
+  "source": {
+    "token_and_sequence_accuracy": "ProbeVAE/train-AR.ipynb cell 7",
+    "family_retention_macro": "artifacts/model_compare/ar_model_h256_l256/patched_notebooks/ar_step1_latent_quality.ipynb cell 14"
+  }
+}

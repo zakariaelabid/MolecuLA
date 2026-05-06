@@ -1,0 +1,7 @@
+base_property,band,seed_index,path
+TPSA,low,0,c:\Users\user\Documents\documents\project\Smiles latent project\artifacts\step6_validate_global_directions_v2\plots\representative_strips\step6_strip_TPSA_low.png
+TPSA,mid,1,c:\Users\user\Documents\documents\project\Smiles latent project\artifacts\step6_validate_global_directions_v2\plots\representative_strips\step6_strip_TPSA_mid.png
+TPSA,high,2,c:\Users\user\Documents\documents\project\Smiles latent project\artifacts\step6_validate_global_directions_v2\plots\representative_strips\step6_strip_TPSA_high.png
+HeavyAtomCount,low,0,c:\Users\user\Documents\documents\project\Smiles latent project\artifacts\step6_validate_global_directions_v2\plots\representative_strips\step6_strip_HeavyAtomCount_low.png
+HeavyAtomCount,mid,1,c:\Users\user\Documents\documents\project\Smiles latent project\artifacts\step6_validate_global_directions_v2\plots\representative_strips\step6_strip_HeavyAtomCount_mid.png
+HeavyAtomCount,high,2,c:\Users\user\Documents\documents\project\Smiles latent project\artifacts\step6_validate_global_directions_v2\plots\representative_strips\step6_strip_HeavyAtomCount_high.png

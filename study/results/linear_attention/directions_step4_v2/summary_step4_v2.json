@@ -1,0 +1,65 @@
+{
+  "seed": 42,
+  "rows": 794403,
+  "split_sizes": {
+    "train": 635522,
+    "val": 79440,
+    "test": 79441
+  },
+  "alpha_grid": [
+    0.0001,
+    0.00031622776601683794,
+    0.001,
+    0.0031622776601683794,
+    0.01,
+    0.03162277660168379,
+    0.1,
+    0.31622776601683794,
+    1.0,
+    3.1622776601683795,
+    10.0,
+    31.622776601683793,
+    100.0,
+    316.22776601683796,
+    1000.0,
+    3162.2776601683795,
+    10000.0
+  ],
+  "bootstrap_B": 100,
+  "subsample_fractions": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "subsample_repeats": 20,
+  "permutation_repeats": 100,
+  "random_direction_k": 2000,
+  "invariance_repeats": {
+    "rotation": 5,
+    "sign_flip": 5,
+    "dimension_permutation": 5
+  },
+  "artifacts_root": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4_v2",
+  "stages_executed": {
+    "core": false,
+    "stability": false,
+    "permutation": false,
+    "confound": false,
+    "invariance": false,
+    "summary": true
+  },
+  "artifact_exists": {
+    "r2_raw_v2.csv": true,
+    "r2_resid_v2.csv": true,
+    "stability_bootstrap_v2.csv": false,
+    "stability_subsample_v2.csv": false,
+    "permutation_null_v2.csv": false,
+    "permutation_pvalues_v2.csv": false,
+    "cosine_vs_confounds_raw_v2.csv": true,
+    "cosine_vs_confounds_resid_v2.csv": true,
+    "random_controls_v2.npz": true,
+    "invariance_summary_v2.csv": true,
+    "direction_shortlist_v2.csv": true
+  }
+}

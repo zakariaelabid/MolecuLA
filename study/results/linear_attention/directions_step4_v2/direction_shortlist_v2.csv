@@ -1,0 +1,13 @@
+target,group,is_optional
+TPSA,primary,False
+HBA,primary,False
+cLogP,primary,False
+FractionCSP3,primary,False
+AromaticRingCount,primary,False
+resid_RingCount,primary,False
+HeavyAtomCount,positive_confounded,False
+MolWt,positive_confounded,False
+BertzCT,positive_confounded,True
+ExactMolWt,positive_confounded,True
+NumSpiroAtoms,hard_control,False
+NumBridgeheadAtoms,hard_control,False

@@ -1,0 +1,2 @@
+property,direction_variant,decode_mode,expected_seeds,candidate_rows_ok,path_rows_ok,fixed_length_ok,geometry_max_abs_error,dp_no_worse_than_medoid,benchmark_total_span_std_ref,default_total_span_std,max_total_span_std
+FractionCSP3,raw,free_length,12,True,True,True,9.79834119951839e-08,True,22.371986389160156,11.185993194580078,16.778989791870117

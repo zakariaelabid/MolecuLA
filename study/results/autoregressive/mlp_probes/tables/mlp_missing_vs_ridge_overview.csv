@@ -1,0 +1,3 @@
+property,ridge_raw_r2_test,mlp_raw_r2_test,Delta-R2_raw,ridge_residual_r2_test,mlp_residual_r2_test,Delta-R2_residual,abs_spearman,interpretation
+QED,0.496635,0.803316,0.306681,0.425810,0.771054,0.345244,0.298691,nonlinear/local property
+BertzCT,0.964903,0.986100,0.021197,0.748506,0.917383,0.168876,0.907954,confounded property

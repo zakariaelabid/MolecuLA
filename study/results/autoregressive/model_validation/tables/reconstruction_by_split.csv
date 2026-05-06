@@ -1,0 +1,4 @@
+split,n,token_accuracy,exact_sequence_accuracy,invalid_decode_count,invalid_decode_rate
+train,635522,0.994882,0.974961,0,0.0
+val,79440,0.992802,0.965609,0,0.0
+test,79441,0.992647,0.965068,0,0.0

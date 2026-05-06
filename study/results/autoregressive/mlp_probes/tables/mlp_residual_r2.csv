@@ -1,0 +1,14 @@
+property,target,r2_train,r2_val,r2_test,epochs
+molWt,resid_molWt,0.954011,0.934997,0.937809,15
+HeavyAtomCount,resid_HeavyAtomCount,0.945524,0.932546,0.932690,15
+cLogP,resid_cLogP,0.919735,0.899012,0.901068,15
+TPSA,resid_TPSA,0.931677,0.915038,0.915502,15
+HBD,resid_HBD,0.827581,0.778694,0.778430,15
+HBA,resid_HBA,0.908153,0.883993,0.884343,15
+NumRotatableBonds,resid_NumRotatableBonds,0.884523,0.849673,0.848861,15
+RingCount,resid_RingCount,0.966821,0.956693,0.957594,15
+AromaticRingCount,resid_AromaticRingCount,0.922984,0.903761,0.902358,15
+FractionCSP3,resid_FractionCSP3,0.971505,0.966298,0.965999,15
+NumSpiroAtoms,resid_NumSpiroAtoms,0.848611,0.583261,0.608081,14
+NumBridgeheadAtoms,resid_NumBridgeheadAtoms,0.927995,0.778502,0.771113,15
+SA-score,resid_SA-score,0.838126,0.795190,0.795043,15

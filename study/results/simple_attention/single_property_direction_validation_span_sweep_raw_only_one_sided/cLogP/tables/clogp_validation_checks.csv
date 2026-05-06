@@ -1,0 +1,5 @@
+property,direction_variant,span_label,span_multiplier,decode_mode,expected_seeds,candidate_rows_ok,path_rows_ok,fixed_length_ok,geometry_max_abs_error,dp_no_worse_than_medoid,benchmark_total_span_std_ref,default_total_span_std,max_total_span_std
+cLogP,raw,x1,1.0,free_length,12,True,True,True,3.454445969275355e-07,True,22.371986389160156,11.185993194580078,16.778989791870117
+cLogP,raw,x4,4.0,free_length,12,True,True,True,6.849665155073126e-07,True,22.371986389160156,11.185993194580078,16.778989791870117
+cLogP,raw,x16,16.0,free_length,12,True,True,True,2.7398660620292503e-06,True,22.371986389160156,11.185993194580078,16.778989791870117
+cLogP,raw,x64,64.0,free_length,12,True,True,True,4.40389703726396e-06,True,22.371986389160156,11.185993194580078,16.778989791870117

@@ -1,0 +1,5 @@
+confound,path,dim
+selfies_len_tokens,.\artifacts\model_compare\nat_model_h256_l256\confounds_step3\confound_directions\w_length.npy,256
+token_entropy,.\artifacts\model_compare\nat_model_h256_l256\confounds_step3\confound_directions\w_entropy.npy,256
+branch_token_count,.\artifacts\model_compare\nat_model_h256_l256\confounds_step3\confound_directions\w_branch.npy,256
+ring_token_count,.\artifacts\model_compare\nat_model_h256_l256\confounds_step3\confound_directions\w_ring.npy,256

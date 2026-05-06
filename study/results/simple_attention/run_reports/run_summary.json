@@ -1,0 +1,128 @@
+{
+  "model_spec": {
+    "tag": "nat_model_h256_l256",
+    "model_py": "transformer_vae/models/NAT_model.py",
+    "checkpoint": "transformer_vae/trained_models/final(H256-L256).pt",
+    "hidden_size": 256,
+    "latent_size": 256,
+    "attn_heads": 8,
+    "max_len": 77,
+    "num_slots": 8,
+    "layers": 1
+  },
+  "artifact_root": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256",
+  "stages": {
+    "single_property_validation": {
+      "executed_code_cells": 9,
+      "run_dir": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\_patched_notebooks",
+      "patched_notebook": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\_patched_notebooks\\single_property_direction_validation_corrected.ipynb"
+    },
+    "manifest": {
+      "model_tag": "nat_model_h256_l256",
+      "artifact_root": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256",
+      "sections": {
+        "latent_test_analysis": {
+          "root_exists": true,
+          "files": {
+            "plots/local_latent_grid.png": true,
+            "tables/latent_linear_interpolation.csv": true,
+            "notes/latent_test_summary.md": false
+          }
+        },
+        "model_validation": {
+          "root_exists": true,
+          "files": {
+            "metrics.json": true,
+            "metrics.csv": true,
+            "plots/phase5_interp_group_retention.png": false
+          }
+        },
+        "confounds_step3": {
+          "root_exists": true,
+          "files": {
+            "panels_step3.csv": true,
+            "panels_step3_with_residuals.csv": true,
+            "summary_step3.json": true,
+            "tables/confound_directions_index.csv": true,
+            "tables/top20_confounded_pairs_YC.csv": true
+          }
+        },
+        "directions_step4": {
+          "root_exists": true,
+          "files": {
+            "scalers.npz": true,
+            "directions_raw.npz": true,
+            "directions_resid.npz": true,
+            "controls_permuted.npz": true,
+            "controls_random.npz": true,
+            "r2_raw.csv": true,
+            "r2_resid.csv": true,
+            "stability_bootstrap_raw.csv": true,
+            "stability_bootstrap_resid.csv": true,
+            "cosine_vs_confounds_raw.csv": true,
+            "cosine_vs_confounds_resid.csv": true,
+            "direction_labels_ABC.csv": true,
+            "summary_step4.json": true
+          }
+        },
+        "directions_step4_v2": {
+          "root_exists": false,
+          "files": {
+            "summary_step4_v2.json": false,
+            "direction_shortlist_v2.csv": false,
+            "direction_shortlist_confirmation_v2.csv": false
+          }
+        },
+        "single_property_direction_validation_corrected/FractionCSP3": {
+          "root_exists": true,
+          "files": {
+            "summary_fractioncsp3_single_property_direction_validation_corrected.json": true,
+            "tables/fractioncsp3_probe_summary.csv": true,
+            "tables/fractioncsp3_run_summary.csv": true,
+            "tables/fractioncsp3_validation_checks.csv": true
+          }
+        },
+        "single_property_direction_validation_span_sweep/FractionCSP3": {
+          "root_exists": false,
+          "files": {
+            "summary_fractioncsp3_single_property_direction_validation_span_sweep.json": false,
+            "tables/fractioncsp3_probe_summary.csv": false,
+            "tables/fractioncsp3_run_summary.csv": false,
+            "tables/fractioncsp3_validation_checks.csv": false
+          }
+        },
+        "single_property_direction_validation_span_sweep_raw_only/FractionCSP3": {
+          "root_exists": false,
+          "files": {
+            "summary_fractioncsp3_single_property_direction_validation_span_sweep.json": false,
+            "tables/fractioncsp3_probe_summary.csv": false,
+            "tables/fractioncsp3_run_summary.csv": false,
+            "tables/fractioncsp3_validation_checks.csv": false
+          }
+        },
+        "single_property_direction_validation_span_sweep_raw_only_one_sided/FractionCSP3": {
+          "root_exists": true,
+          "files": {
+            "summary_fractioncsp3_single_property_direction_validation_span_sweep.json": true,
+            "tables/fractioncsp3_probe_summary.csv": true,
+            "tables/fractioncsp3_run_summary.csv": true,
+            "tables/fractioncsp3_validation_checks.csv": true
+          }
+        },
+        "step6_validate_global_directions_v2": {
+          "root_exists": false,
+          "files": {
+            "summary_step6_validate_global_directions_v2.json": false,
+            "tables/step6_candidate_level.csv": false,
+            "tables/step6_family_summary.csv": false,
+            "tables/step6_seed_summary.csv": false,
+            "tables/step6_step_summary.csv": false,
+            "tables/step6_representative_paths.csv": false,
+            "tables/step6_traversal_geometry_audit.csv": false,
+            "tables/step6_validation_checks.csv": false
+          }
+        }
+      }
+    }
+  }
+}

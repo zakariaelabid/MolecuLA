@@ -1,0 +1,143 @@
+{
+  "standardization": {
+    "step3_notebook_path": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\transformer_vae\\step3_confounds_rdkit_properties.ipynb",
+    "step3_mentions_scaling": true,
+    "step3_saved_scalers_found": false,
+    "perform_standardization_step4": true,
+    "note": "Step 3 used scaling inside fits, but no reusable scaler artifact was found. Step 4 will standardize on train only and save scalers."
+  },
+  "top5_raw_directions": [
+    {
+      "target": "HeavyAtomCount",
+      "label": "B",
+      "r2_test": 0.9758668831217482,
+      "cos_median": 0.9996057572804938,
+      "max_abs_confound_cos": 0.7741200998388078
+    },
+    {
+      "target": "ExactMolWt",
+      "label": "B",
+      "r2_test": 0.9505180300151523,
+      "cos_median": 0.9995474812180244,
+      "max_abs_confound_cos": 0.6135434485564482
+    },
+    {
+      "target": "MolWt",
+      "label": "B",
+      "r2_test": 0.9502464738519721,
+      "cos_median": 0.9995232019985308,
+      "max_abs_confound_cos": 0.6109317225412234
+    },
+    {
+      "target": "BertzCT",
+      "label": "B",
+      "r2_test": 0.9493826810485706,
+      "cos_median": 0.9992557160761286,
+      "max_abs_confound_cos": 0.6058012603115018
+    },
+    {
+      "target": "RingCount",
+      "label": "B",
+      "r2_test": 0.8917904219218958,
+      "cos_median": 0.9989498640142004,
+      "max_abs_confound_cos": 0.46559647610930016
+    }
+  ],
+  "top5_resid_directions": [
+    {
+      "target": "resid_FractionCSP3",
+      "label": "A",
+      "r2_test": 0.7843107909318071,
+      "cos_median": 0.9991876710901244,
+      "max_abs_confound_cos": 0.19183053976868017
+    },
+    {
+      "target": "resid_AromaticRingCount",
+      "label": "B",
+      "r2_test": 0.7210168871828835,
+      "cos_median": 0.9990992386004268,
+      "max_abs_confound_cos": 0.4261252084323262
+    },
+    {
+      "target": "resid_cLogP",
+      "label": "A",
+      "r2_test": 0.6571886763225447,
+      "cos_median": 0.9989662366706183,
+      "max_abs_confound_cos": 0.21477487833552789
+    },
+    {
+      "target": "resid_BertzCT",
+      "label": "B",
+      "r2_test": 0.6563911305801979,
+      "cos_median": 0.9990669284425384,
+      "max_abs_confound_cos": 0.4223714134600216
+    },
+    {
+      "target": "resid_HBA",
+      "label": "A",
+      "r2_test": 0.6359993116081677,
+      "cos_median": 0.9990771226340542,
+      "max_abs_confound_cos": 0.25320483085447515
+    }
+  ],
+  "confound_alignment_warnings": [
+    {
+      "target_type": "raw",
+      "target": "HeavyAtomCount",
+      "label": "B",
+      "max_abs_confound_cos": 0.7741200998388078,
+      "r2_test": 0.9758668831217482,
+      "cos_median": 0.9996057572804938
+    },
+    {
+      "target_type": "raw",
+      "target": "ExactMolWt",
+      "label": "B",
+      "max_abs_confound_cos": 0.6135434485564482,
+      "r2_test": 0.9505180300151523,
+      "cos_median": 0.9995474812180244
+    },
+    {
+      "target_type": "raw",
+      "target": "MolWt",
+      "label": "B",
+      "max_abs_confound_cos": 0.6109317225412234,
+      "r2_test": 0.9502464738519721,
+      "cos_median": 0.9995232019985308
+    },
+    {
+      "target_type": "raw",
+      "target": "BertzCT",
+      "label": "B",
+      "max_abs_confound_cos": 0.6058012603115018,
+      "r2_test": 0.9493826810485706,
+      "cos_median": 0.9992557160761286
+    },
+    {
+      "target_type": "raw",
+      "target": "QED",
+      "label": "B",
+      "max_abs_confound_cos": 0.6011038892772135,
+      "r2_test": 0.4308441019886793,
+      "cos_median": 0.9983658883189682
+    }
+  ],
+  "artifacts": {
+    "scalers": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\scalers.npz",
+    "directions_raw": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\directions_raw.npz",
+    "directions_resid": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\directions_resid.npz",
+    "controls_permuted": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\controls_permuted.npz",
+    "controls_random": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\controls_random.npz",
+    "r2_raw_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\r2_raw.csv",
+    "r2_resid_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\r2_resid.csv",
+    "stability_raw_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\stability_bootstrap_raw.csv",
+    "stability_resid_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\stability_bootstrap_resid.csv",
+    "cosine_raw_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\cosine_vs_confounds_raw.csv",
+    "cosine_resid_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\cosine_vs_confounds_resid.csv",
+    "labels_csv": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\direction_labels_ABC.csv",
+    "plot_r2_comparison": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\r2_comparison_raw_vs_resid.png",
+    "plot_stability": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\stability_summary.png",
+    "plot_cos_heatmap": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\cosine_vs_confounds_heatmaps.png",
+    "plot_controls": "C:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\directions_step4\\controls_summary.png"
+  }
+}

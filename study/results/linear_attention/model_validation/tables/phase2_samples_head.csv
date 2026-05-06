@@ -1,0 +1,6 @@
+sample_id,selfies,smiles,canon_smiles,is_valid
+0,[C][C][Branch1][C][Branch2][C][C][=C][C][Br][=N][C][Ring1][C][C][C][Branch1][C][=Branch1][=Branch1][=N][=C][\O],CCCC=CCBr,CCCC=CCBr,1
+1,[C][=C][=C][C][C][C][C][Branch1][Ring1][Ring1][=Branch1][C][=Branch1],C=C=CCCCCC,C=C=CCCCCC,1
+2,[C][C][Branch1][C][=O][C][=Branch1][C][C][C][=Branch2][=Branch1][C][=O][C][C][Ring1][P][O][C][C][C][=Branch1][=C][C][N][N][Ring1][C][=O][C][Ring1][#Branch2][=C][F][=C][Ring1][S][N][C][N][=C][=C][=C][Ring1],CC(O)C(C)C=O,CC(O)C(C)C=O,1
+3,[C][C][C][C][C][Branch1][C][C][C][=Branch1][C][C][C][C][O][C][C][C][C][C][C][=C][=C][=C][C][C][C][C][C][C][C][C][=Branch1][C][=O][O][C][=Branch1][C],CCCCC(C)C(C)CCOCCCCCC=C=C=CCCCCCCCC(=O)OC,CCCCC(C)C(C)CCOCCCCCC=C=C=CCCCCCCCC(=O)OC,1
+4,[=C][C][C][Branch2][=C][=C][=C][=C][C][C],CCCC=CCC,CCC=CCCC,1

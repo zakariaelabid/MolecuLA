@@ -1,0 +1,89 @@
+﻿{
+    "model_name":  "ar_model_h256_l256",
+    "architecture":  "autoregressive Transformer-VAE with slot encoder and causal Transformer decoder",
+    "source_notebook":  "transformer_vae/train-AR.ipynb",
+    "checkpoint_path":  "artifacts/model_compare/ar_model_h256_l256/checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt",
+    "checkpoint_status":  "dummy_placeholder_waiting_for_recovered_weights",
+    "latent_dim":  256,
+    "hidden_dim":  256,
+    "attention_heads":  8,
+    "num_slots":  8,
+    "encoder_layers":  3,
+    "decoder_layers":  2,
+    "dataset_path":  "smiles_selfies_full.csv",
+    "dataset_rows_expected":  794403,
+    "split_sizes_expected":  {
+                                 "train":  635522,
+                                 "val":  79440,
+                                 "test":  79441
+                             },
+    "notebooks_created":  [
+                              "patched_notebooks/ar_step1_latent_quality.ipynb",
+                              "patched_notebooks/ar_step3_confounds.ipynb",
+                              "patched_notebooks/ar_step4_6_traversal.ipynb",
+                              "patched_notebooks/ar_step3_mlp_probes.ipynb",
+                              "patched_notebooks/ar_train_checkpoint.ipynb"
+                          ],
+    "artifact_folders_created":  [
+                                     "model_validation",
+                                     "model_validation/tables",
+                                     "model_validation/plots",
+                                     "confounds_step3",
+                                     "confounds_step3/tables",
+                                     "confounds_step3/plots",
+                                     "traversal_step4_6",
+                                     "traversal_step4_6/tables",
+                                     "traversal_step4_6/plots",
+                                     "confounds_mlp_step3",
+                                     "confounds_mlp_step3/tables",
+                                     "confounds_mlp_step3/plots"
+                                 ],
+    "properties_evaluated":  [
+                                 "molWt",
+                                 "HeavyAtomCount",
+                                 "cLogP",
+                                 "TPSA",
+                                 "HBD",
+                                 "HBA",
+                                 "NumRotatableBonds",
+                                 "RingCount",
+                                 "AromaticRingCount",
+                                 "FractionCSP3",
+                                 "NumSpiroAtoms",
+                                 "NumBridgeheadAtoms",
+                                 "SA-score"
+                             ],
+    "confounds_evaluated":  [
+                                "selfies_len_tokens",
+                                "branch_token_count",
+                                "ring_token_count",
+                                "token_entropy"
+                            ],
+    "traversal_primary_candidates":  [
+                                         "FractionCSP3",
+                                         "cLogP",
+                                         "TPSA",
+                                         "HBA",
+                                         "AromaticRingCount",
+                                         "HBD",
+                                         "SA-score"
+                                     ],
+    "traversal_excluded_as_confounded":  [
+                                             "molWt",
+                                             "HeavyAtomCount",
+                                             "NumRotatableBonds"
+                                         ],
+    "timestamp":  "2026-04-26T00:00:00+02:00",
+    "run_status":  {
+                       "latent_quality":  "not_run_dummy_checkpoint",
+                       "confounds":  "not_run_dummy_checkpoint",
+                       "traversal":  "not_run_dummy_checkpoint",
+                       "MLP_probes":  "not_run_dummy_checkpoint",
+                       "training":  "not_run_training_notebook_created"
+                   },
+    "warnings":  [
+                     "Checkpoint file is a dummy placeholder and must be replaced before execution.",
+                     "SA-score rows require sascorer availability in the runtime environment.",
+                     "Training notebook includes a one-time CSV rewrite switch for SELFIES-decoded SMILES; keep it False unless intentionally updating the root CSV."
+                 ]
+}

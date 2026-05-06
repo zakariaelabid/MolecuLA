@@ -1,0 +1,5 @@
+confound,path,dim
+selfies_len_tokens,..\artifacts\confounds_step3\confound_directions\w_length.npy,512
+token_entropy,..\artifacts\confounds_step3\confound_directions\w_entropy.npy,512
+branch_token_count,..\artifacts\confounds_step3\confound_directions\w_branch.npy,512
+ring_token_count,..\artifacts\confounds_step3\confound_directions\w_ring.npy,512

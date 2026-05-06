@@ -1,0 +1,3 @@
+property,target,r2_train,r2_val,r2_test,epochs
+BertzCT,resid_BertzCT,0.936171,0.919226,0.917383,15
+QED,resid_QED,0.817112,0.773198,0.771054,15

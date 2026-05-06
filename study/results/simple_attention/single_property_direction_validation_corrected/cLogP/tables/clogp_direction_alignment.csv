@@ -1,0 +1,5 @@
+confound,raw_vs_confound_cosine,resid_vs_confound_cosine,confound_direction_source,confound_r2_val
+selfies_len_tokens,0.6099433302879333,0.03585807606577873,step3_saved_direction,0.9905542915141781
+ring_token_count,0.44314444065093994,-0.02689003013074398,step3_saved_direction,0.9473818495882544
+branch_token_count,0.43817853927612305,0.0902409553527832,step3_saved_direction,0.9303085108772455
+token_entropy,0.18164530396461487,0.0067016188986599445,step3_saved_direction,0.8304077259127769

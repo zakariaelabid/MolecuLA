@@ -1,0 +1,2 @@
+property,direction_variant,decode_mode,seeds,target_spearman_median,target_slope_median,monotonic_violations_median,validity_fraction_mean,uniqueness_fraction_mean,path_unique_canonical_median,path_constant_fraction_mean,path_similarity_end_median,adjacent_tanimoto_median,confound_slope_median,pred_len_slope_median,dp_no_worse_fraction
+cLogP,raw,free_length,12,-0.07759402897989853,-1.036073314700817e-15,0.0,1.0,0.009259259259259259,1.0,0.8333333333333334,1.0,1.0,-1.2249117990321938e-14,0.24429075061722177,1.0

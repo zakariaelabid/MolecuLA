@@ -1,0 +1,2 @@
+pair_id,target_family,start_dataset_idx,end_dataset_idx,start_smiles,end_smiles,start_canonical_smiles,end_canonical_smiles,start_target_families,end_target_families,fingerprint_similarity,latent_distance,delta_heavy_atom_count
+0,alcohol_or_phenol,591919,663405,O=CC(O)C(O)C(O)CO,O=C[C@@H](O)[C@H](O)[C@H](O)[C@@H](O)CO,O=CC(O)C(O)C(O)CO,O=C[C@@H](O)[C@H](O)[C@H](O)[C@@H](O)CO,alcohol_or_phenol;aldehyde_or_ketone,alcohol_or_phenol;aldehyde_or_ketone,0.85,13.01791763305664,2

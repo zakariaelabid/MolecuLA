@@ -1,0 +1,12 @@
+target_family,valid_fraction,target_family_retention,n_steps
+alcohol,1.0,0.636364,11
+aldehyde,1.0,0.818182,11
+amide,1.0,0.818182,11
+amine,1.0,1.000000,11
+carboxylic_acid,1.0,0.727273,11
+ester,1.0,1.000000,11
+ether,1.0,1.000000,11
+ketone,1.0,0.818182,11
+nitrile,1.0,1.000000,11
+phenol,1.0,0.545455,11
+sulfonamide,1.0,1.000000,11

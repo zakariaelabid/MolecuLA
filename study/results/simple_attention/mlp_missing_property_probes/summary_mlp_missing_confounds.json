@@ -1,0 +1,117 @@
+{
+  "model_dir": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256",
+  "step3_dir": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3",
+  "source_mlp_dir": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_mlp_step3",
+  "output_dir": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_mlp_step3_missing_properties",
+  "device": "cuda",
+  "batch_size": 8192,
+  "max_epochs": 15,
+  "min_epochs": 6,
+  "patience": 4,
+  "min_val_r2_improvement": 0.001,
+  "use_amp": true,
+  "target_properties": [
+    "MolWt",
+    "HeavyAtomCount",
+    "NumRotatableBonds",
+    "RingCount",
+    "BertzCT",
+    "SA-score"
+  ],
+  "default_priority_targets_from_source_notebook": [
+    "cLogP",
+    "TPSA",
+    "FractionCSP3",
+    "HBA",
+    "HBD",
+    "AromaticRingCount",
+    "QED",
+    "NumSpiroAtoms",
+    "NumBridgeheadAtoms"
+  ],
+  "excluded_confounded_properties_from_source_notebook": [
+    "HeavyAtomCount",
+    "MolWt",
+    "ExactMolWt",
+    "BertzCT",
+    "RingCount"
+  ],
+  "additional_properties_requested": [
+    "SA-score"
+  ],
+  "sa_score_available": true,
+  "sa_score_panel_paths": {
+    "missing_mlp_tables": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_mlp_step3_missing_properties\\tables\\sa_score_panel.csv",
+    "step3_tables": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\tables\\sa_score_panel.csv"
+  },
+  "augmented_panel_paths": {
+    "step3_tables": "c:\\Users\\user\\Documents\\documents\\project\\Smiles latent project\\artifacts\\model_compare\\nat_model_h256_l256\\confounds_step3\\tables\\panels_step3_with_residuals_plus_sa.csv"
+  },
+  "dropped_redundant_properties": [
+    "ExactMolWt"
+  ],
+  "top_raw_test_gains": [
+    {
+      "property": "NumRotatableBonds",
+      "delta_test_mlp_minus_ridge": 0.33893501397225884,
+      "r2_test": 0.821024477481842,
+      "ridge_r2_test": 0.4820894635095832
+    },
+    {
+      "property": "SA-score",
+      "delta_test_mlp_minus_ridge": 0.24397190267347701,
+      "r2_test": 0.7110077142715454,
+      "ridge_r2_test": 0.4670358115980684
+    },
+    {
+      "property": "RingCount",
+      "delta_test_mlp_minus_ridge": 0.1035483076571252,
+      "r2_test": 0.9530274868011475,
+      "ridge_r2_test": 0.8494791791440223
+    },
+    {
+      "property": "MolWt",
+      "delta_test_mlp_minus_ridge": 0.06014730207695407,
+      "r2_test": 0.9791799783706665,
+      "ridge_r2_test": 0.9190326762937124
+    },
+    {
+      "property": "BertzCT",
+      "delta_test_mlp_minus_ridge": 0.04444300199819584,
+      "r2_test": 0.9747129678726196,
+      "ridge_r2_test": 0.9302699658744238
+    }
+  ],
+  "top_resid_test_gains": [
+    {
+      "target": "resid_MolWt",
+      "delta_test_mlp_minus_ridge": 0.5173400284261327,
+      "r2_test": 0.8343689441680908,
+      "ridge_r2_test": 0.3170289157419581
+    },
+    {
+      "target": "resid_NumRotatableBonds",
+      "delta_test_mlp_minus_ridge": 0.5001163790738,
+      "r2_test": 0.7008336782455444,
+      "ridge_r2_test": 0.2007172991717444
+    },
+    {
+      "target": "resid_HeavyAtomCount",
+      "delta_test_mlp_minus_ridge": 0.45113674159295747,
+      "r2_test": 0.8298853635787964,
+      "ridge_r2_test": 0.3787486219858389
+    },
+    {
+      "target": "resid_RingCount",
+      "delta_test_mlp_minus_ridge": 0.3392754396014519,
+      "r2_test": 0.8546352386474609,
+      "ridge_r2_test": 0.515359799046009
+    },
+    {
+      "target": "resid_BertzCT",
+      "delta_test_mlp_minus_ridge": 0.2866811816691782,
+      "r2_test": 0.8513002991676331,
+      "ridge_r2_test": 0.5646191174984548
+    }
+  ]
+}

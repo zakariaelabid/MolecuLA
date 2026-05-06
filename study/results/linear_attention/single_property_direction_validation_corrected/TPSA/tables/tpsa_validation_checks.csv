@@ -1,0 +1,9 @@
+property,direction_variant,decode_mode,expected_seeds,candidate_rows_ok,path_rows_ok,fixed_length_ok,geometry_max_abs_error,dp_no_worse_than_medoid,benchmark_total_span_std_ref,default_total_span_std,max_total_span_std
+TPSA,raw,free_length,12,True,True,True,1.613594914839922e-05,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,raw,fixed_length_seed_pred,12,True,True,True,1.613594914839922e-05,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,residual,free_length,12,True,True,True,1.0356489045015849e-05,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,residual,fixed_length_seed_pred,12,True,True,True,1.0356489045015849e-05,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,confound,free_length,12,True,True,True,9.93909123447878e-07,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,confound,fixed_length_seed_pred,12,True,True,True,9.93909123447878e-07,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,random,free_length,12,True,True,True,,True,30.20323944091797,15.101619720458984,22.652429580688477
+TPSA,random,fixed_length_seed_pred,12,True,True,True,,True,30.20323944091797,15.101619720458984,22.652429580688477

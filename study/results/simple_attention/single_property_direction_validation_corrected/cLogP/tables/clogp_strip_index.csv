@@ -1,0 +1,4 @@
+property,direction_variant,seed_band,seed_index,decode_mode,path
+cLogP,raw,low,0,free_length,.\artifacts\model_compare\nat_model_h256_l256\single_property_direction_validation_corrected\cLogP\plots\representative_strips\clogp_raw_low_free_length.png
+cLogP,raw,mid,4,free_length,.\artifacts\model_compare\nat_model_h256_l256\single_property_direction_validation_corrected\cLogP\plots\representative_strips\clogp_raw_mid_free_length.png
+cLogP,raw,high,8,free_length,.\artifacts\model_compare\nat_model_h256_l256\single_property_direction_validation_corrected\cLogP\plots\representative_strips\clogp_raw_high_free_length.png

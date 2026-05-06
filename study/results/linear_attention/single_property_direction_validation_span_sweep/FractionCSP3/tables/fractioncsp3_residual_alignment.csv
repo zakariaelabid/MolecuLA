@@ -1,0 +1,3 @@
+metric,value
+"corr(saved_step3_resid, inline_resid)",0.9999999997178465
+linked_confound_raw_probe,token_entropy

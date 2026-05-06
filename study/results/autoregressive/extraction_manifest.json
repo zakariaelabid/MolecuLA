@@ -1,0 +1,57 @@
+{
+  "model": "autoregressive",
+  "status": "recovered_compact_results",
+  "checkpoint_status": "weights_missing_from_export",
+  "notes": [
+    "Results were recovered from executed notebook outputs and legacy traversal image folders.",
+    "The AR checkpoint was not available as a real local weight file during export.",
+    "Large panels, latent arrays, generated probe weights, and full notebook outputs are intentionally excluded."
+  ],
+  "source_artifacts": {
+    "model_quality": [
+      "artifacts/model_compare/ar_model_h256_l256/patched_notebooks/ar_step1_latent_quality.ipynb",
+      "ProbeVAE/train-AR.ipynb"
+    ],
+    "linear_probes": [
+      "ProbeVAE/train-AR.ipynb",
+      "ProbeVAE/latent-analisys.ipynb"
+    ],
+    "mlp_probes": [
+      "artifacts/model_compare/ar_model_h256_l256/patched_notebooks/ar_step3_mlp_probes.ipynb",
+      "artifacts/model_compare/ar_model_h256_l256/patched_notebooks/ar_step3_mlp_missing_property_probes.ipynb"
+    ],
+    "traversal_images": [
+      "Traversals",
+      "ProbeVAE/artifacts/latent_traversal_plots"
+    ]
+  },
+  "generated_files": {
+    "model_validation": [
+      "model_validation/metrics.csv",
+      "model_validation/metrics.json",
+      "model_validation/tables/reconstruction_by_split.csv",
+      "model_validation/tables/phase5_family_retention_summary.csv"
+    ],
+    "linear_probes": [
+      "linear_probes/tables/ridge_raw_confound_residual_r2.csv",
+      "linear_probes/tables/linear_regression_raw_confound_residual_r2.csv"
+    ],
+    "mlp_probes": [
+      "mlp_probes/tables/mlp_raw_r2.csv",
+      "mlp_probes/tables/mlp_residual_r2.csv",
+      "mlp_probes/tables/mlp_vs_ridge_overview.csv",
+      "mlp_probes/tables/mlp_missing_raw_r2.csv",
+      "mlp_probes/tables/mlp_missing_residual_r2.csv",
+      "mlp_probes/tables/mlp_missing_vs_ridge_overview.csv"
+    ],
+    "traversals": [
+      "traversals/traversal_image_manifest.csv",
+      "traversals/root_traversals/*.png",
+      "traversals/latent_traversal_plots/*.png"
+    ]
+  },
+  "image_counts": {
+    "root_traversals": 7,
+    "latent_traversal_plots": 20
+  }
+}

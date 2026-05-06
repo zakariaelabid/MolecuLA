@@ -1,0 +1,54 @@
+{
+  "top_properties_correlated_with_length": [
+    {
+      "property": "HeavyAtomCount",
+      "abs_corr": 0.9758552870156557
+    },
+    {
+      "property": "ExactMolWt",
+      "abs_corr": 0.9463780754041984
+    },
+    {
+      "property": "MolWt",
+      "abs_corr": 0.9454495248258004
+    },
+    {
+      "property": "BertzCT",
+      "abs_corr": 0.9041699836974086
+    },
+    {
+      "property": "RingCount",
+      "abs_corr": 0.7391613917080451
+    }
+  ],
+  "top_properties_correlated_with_entropy": [
+    {
+      "property": "BertzCT",
+      "abs_corr": 0.6682985671012579
+    },
+    {
+      "property": "MolWt",
+      "abs_corr": 0.5868099380776687
+    },
+    {
+      "property": "ExactMolWt",
+      "abs_corr": 0.5862160452561208
+    },
+    {
+      "property": "RingCount",
+      "abs_corr": 0.585356158437754
+    },
+    {
+      "property": "AromaticRingCount",
+      "abs_corr": 0.5771412890071472
+    }
+  ],
+  "avg_r2_val_Z_to_Y": 0.6883889597252025,
+  "avg_r2_val_Z_to_C": 0.9557549266278735,
+  "is_Z_to_C_easier_than_Z_to_Y": true,
+  "mean_delta_r2_val_after_residualization": -0.19294956001599597,
+  "mean_delta_r2_test_after_residualization": -0.1930314615036374,
+  "drastic_drop_after_residualization": true,
+  "n_rdkit_valid": 794403,
+  "n_total": 794403
+}
