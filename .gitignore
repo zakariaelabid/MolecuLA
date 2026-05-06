@@ -17,4 +17,3 @@ study/**/Z_mu.npy
 study/**/Z_logvar.npy
 .DS_Store
 Thumbs.db
-data/smiles_selfies_full.csv
