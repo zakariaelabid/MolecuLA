@@ -61,7 +61,6 @@ checkpoints/simple_attention_h256_l256.pt
 checkpoints/H256-L256-3E-2D-Final-NoCorruption.pt
 ```
 
-Use Git LFS for `*.pt` and the dataset CSV if this repository is pushed to GitHub.
 
 ## Workflow
 
